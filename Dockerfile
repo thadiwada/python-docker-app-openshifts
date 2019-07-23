@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.6.5-alpine3.7
+FROM python:latest
 
 MAINTAINER MANIVANNAN.C
 # Set the working directory to /app
@@ -15,7 +15,7 @@ RUN pip install -r requirements.txt
 EXPOSE 80
 
 # Define environment variable
-ENV NAME World
+ENV NAME ItrainWorld
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
