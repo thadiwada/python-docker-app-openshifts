@@ -21,7 +21,7 @@ node{
      sh 'oc login --token=1Zjzee5hEUqTKhPde6eevi1gCZH81foIgOSUowtl-3E --server=https://api.us-east-1.online-starter.openshift.com:6443'
     //sh 'oc new project padmavathy'
      sh 'oc new-app thadiwada/python-docker-app-openshifts:001 --name ubuntu'
-     sh 'oc expose svc ubuntu --name=ubuntu'
+     sh 'oc expose svc python-docker-app-openshifts --name=ubuntu'
      sh 'oc status'
     }
    
